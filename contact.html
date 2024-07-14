@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WINHAUS SOLAR - Kontaktiere Uns</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="top-bar">
-    <div class="top-bar-content">
-      <span>Willkommen zu WINHAUS SOLAR!</span>
-      <div class="top-bar-links">
-        <a href="#">Einloggen</a> oder
-        <a href="#">Konto erstellen</a>
-        <div class="language">
-          <a href="#"><img src="germany.png" alt="Deutsch"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WINHAUS SOLAR - Kontaktiere Uns</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("JleHoUONk-gQUtM_U");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <span>Willkommen zu WINHAUS SOLAR!</span>
+        <div class="top-bar-links">
+          <a href="#">Einloggen</a> oder
+          <a href="#">Konto erstellen</a>
+          <div class="language">
+            <a href="#"><img src="germany.png" alt="Deutsch" /></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <header>
-    <div class="header-content">
-      <a href="index.html">
-        <img src="logo.png" alt="WINHAUS SOLAR Logo" class="logo">
-      </a>
-      <div class="search-bar">
-        <input type="text" placeholder="Suche hier">
-        <button>🔍</button>
+    <header>
+      <div class="header-content">
+        <a href="index.html">
+          <img src="logo.png" alt="WINHAUS SOLAR Logo" class="logo" />
+        </a>
+        <div class="search-bar">
+          <input type="text" placeholder="Suche hier" />
+          <button>🔍</button>
+        </div>
+        <div class="contact-info">
+          <p><strong>+49 173 9614851</strong></p>
+          <p>
+            <a href="mailto:feyziula@winhaus-solar.de"
+              >feyziula@winhaus-solar.de</a
+            >
+          </p>
+        </div>
       </div>
-      <div class="contact-info">
-        <p><strong>+49 173 9614851</strong></p>
-        <p><a href="mailto:feyziula@winhaus-solar.de">feyziula@winhaus-solar.de</a></p>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HEIM</a></li>
+          <li><a href="about.html">ÜBER UNS</a></li>
+          <li><a href="contact.html">KONTAKTIERE UNS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="breadcrumb">
+      <a href="index.html">Heim</a> > <span>Kontaktiere Uns</span>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HEIM</a></li>
-        <li><a href="about.html">ÜBER UNS</a></li>
-        <li><a href="contact.html">KONTAKTIERE UNS</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="breadcrumb">
-    <a href="index.html">Heim</a> > <span>Kontaktiere Uns</span>
-  </div>
-  <main>
-    <section class="contact">
-      <h1>Kontaktiere Uns</h1>
-      <p>Wir freuen uns, von Ihnen zu hören. Nehmen wir Kontakt auf.</p>
-      <h2>EINEN KOMMENTAR HINTERLASSEN</h2>
-      <form action="#">
+    <main>
+      <section class="contact">
+        <h1>Kontaktiere Uns</h1>
+        <p>Wir freuen uns, von Ihnen zu hören. Nehmen wir Kontakt auf.</p>
+        <h2>EINEN KOMMENTAR HINTERLASSEN</h2>
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="theme">Thema</label>
+            <input type="text" id="theme" name="theme" />
+          </div>
+          <div class="form-group">
+            <label for="comment">Dein Kommentar*</label>
+            <textarea id="comment" name="comment" required></textarea>
+          </div>
+          <button type="submit">EINREICHEN</button>
+        </form>
+        <!-- <form action="#">
         <div class="form-group">
           <label for="name">Name*</label>
           <input type="text" id="name" name="name" required>
@@ -67,53 +99,99 @@
           <textarea id="comment" name="comment" required></textarea>
         </div>
         <button type="submit">EINREICHEN</button>
-      </form>
-      <div class="contact-image">
-        <img src="solar_batteries.png" alt="Solar Batteries">
+      </form> -->
+        <div class="contact-image">
+          <img src="solar_batteries.png" alt="Solar Batteries" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>MY ACCOUNT</h4>
+          <ul>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Personal information</a></li>
+            <li><a href="#">Addresses</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Your Vouchers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>INFORMATION</h4>
+          <ul>
+            <li><a href="#">New products</a></li>
+            <li><a href="#">Top sellers</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Our stores</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>MY ACCOUNT</h4>
+          <address>
+            WINHAUS SOLAR UG<br />
+            Fenster/Türen und Solartechnik<br />
+            S. Feyziula<br />
+            Chattering 33<br />
+            65428 Rüsselsheim<br />
+            Tel.: +49 173 9614851<br />
+            <a href="mailto:feyziula@winhaus-solar.de"
+              >feyziula@winhaus-solar.de</a
+            ><br />
+            <a href="http://www.winhaus-solar.de" target="_blank"
+              >www.winhaus-solar.de</a
+            >
+          </address>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>MY ACCOUNT</h4>
-        <ul>
-          <li><a href="#">My account</a></li>
-          <li><a href="#">Personal information</a></li>
-          <li><a href="#">Addresses</a></li>
-          <li><a href="#">Discount</a></li>
-          <li><a href="#">Order History</a></li>
-          <li><a href="#">Your Vouchers</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2014 Powered by WINHAUS SOLAR. All Rights Reserved.</p>
       </div>
-      <div class="footer-section">
-        <h4>INFORMATION</h4>
-        <ul>
-          <li><a href="#">New products</a></li>
-          <li><a href="#">Top sellers</a></li>
-          <li><a href="#">Specials</a></li>
-          <li><a href="#">Manufacturers</a></li>
-          <li><a href="#">Suppliers</a></li>
-          <li><a href="#">Our stores</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>MY ACCOUNT</h4>
-        <address>
-          WINHAUS SOLAR UG<br>
-          Fenster/Türen und Solartechnik<br>
-          S. Feyziula<br>
-          Chattering 33<br>
-          65428 Rüsselsheim<br>
-          Tel.: +49 173 9614851<br>
-          <a href="mailto:feyziula@winhaus-solar.de">feyziula@winhaus-solar.de</a><br>
-          <a href="http://www.winhaus-solar.de" target="_blank">www.winhaus-solar.de</a>
-        </address>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2014 Powered by WINHAUS SOLAR. All Rights Reserved.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+
+    <script type="text/javascript">
+      // service id   service_v9oweab
+      // template id   template_2mcknbn
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector("form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Get the form values
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const theme = document.getElementById("theme").value;
+            const comment = document.getElementById("comment").value;
+
+            // Define the email parameters
+            const templateParams = {
+              name: name,
+              email: email,
+              theme: theme,
+              comment: comment,
+            };
+
+            // Send the confirmation email to the customer
+            emailjs
+              .send("service_v9oweab", "template_2mcknbn", templateParams)
+              .then(
+                function (response) {
+                  console.log("SUCCESS!", response.status, response.text);
+                  alert("Ihre Nachricht wurde erfolgreich gesendet!");
+                },
+                function (error) {
+                  console.error("FAILED...", error);
+                  alert(
+                    "Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut."
+                  );
+                }
+              );
+          });
+      });
+    </script>
+  </body>
 </html>
